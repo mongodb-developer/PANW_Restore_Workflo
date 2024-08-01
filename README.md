@@ -63,7 +63,7 @@ async function applyChanges(changes) {
     }
   }
 }
-
+```
 Cleanup:
 ```
 async function cleanup(client, changeStream) {
@@ -75,18 +75,15 @@ Full Workflow Example:
 Start Change Stream and Capture Changes:
 ```
 const { client, changeStream, changes } = await startChangeStream();
-
+```
 Restore the Specific Database:
-
-
+```
 mongorestore --db yourDatabase --drop /path/to/backup/yourDatabase
+```
 Apply Captured Changes:
-
-javascript
-Copy code
+```
 await applyChanges(changes);
-Cleanup:
-
-javascript
-Copy code
+```
+```
 await cleanup(client, changeStream);
+```
