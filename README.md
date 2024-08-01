@@ -39,6 +39,7 @@ Perform the Snapshot Restore for the Specific Database:
 mongorestore --db yourDatabase --drop /path/to/backup/yourDatabase
 ```
 Apply the Captured Changes:
+```
 async function applyChanges(changes) {
   const client = new MongoClient('mongodb://localhost:27017');
   await client.connect();
