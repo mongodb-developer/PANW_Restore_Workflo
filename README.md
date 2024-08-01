@@ -1,4 +1,4 @@
-# PANW_Restore_Workflo
+# PANW quick restore at DB Level 🧹
 Step by step guide to quick DB level restore 
 
 Example Commands
